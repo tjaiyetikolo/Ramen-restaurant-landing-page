@@ -1,0 +1,164 @@
+/* GLOBALS SECTION */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-FREE/Gilroy-ExtraBold.otf');
+}
+
+html {
+  font-size: 62.5%;
+  --header1: calc(4.2rem + 1vw);
+  --header4: 1.5rem;
+  --text: calc(0.01rem + 1vw);
+  --cardtext: calc(1.4rem + 1vw);
+  --login-colour: #f4ae1a;
+  --order-colour: #ed461d;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  min-width: 90vw;
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #504969;
+}
+
+button,
+.logo {
+  cursor: pointer;
+}
+
+/* HEADER SECTION */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  padding: 3rem 11%;
+}
+nav .logo {
+  flex: 0.6 1 20rem;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1.5 1 2rem;
+}
+nav ul li {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.login {
+  flex: 1 1 2rem;
+  justify-content: flex-end;
+}
+.login button {
+  font-size: 1.2rem;
+  font-weight: 700;
+  height: 70%;
+  padding: 0rem 3rem;
+  background: var(--login-colour);
+  color: white;
+  border: none;
+}
+
+/* HERO SECTION */
+.hero {
+  margin: auto;
+  padding: 8rem 16rem 8rem 16rem;
+  justify-content: space-around;
+}
+.hero-text {
+  flex: 1 1 20rem;
+  padding: 2rem;
+}
+
+.hero-text h1 {
+  font-family: sans-serif;
+  font-size: var(--header1);
+  font-weight: 600;
+}
+
+.hero-image {
+  flex: 1 1 20rem;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.hero-image bowl {
+  z-index: 1;
+}
+
+.hero-image .lines {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  width: 70%;
+  letter-spacing: 0.05rem;
+  padding: 3rem 0;
+}
+
+.hero-text button {
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 1rem 3rem;
+  background: var(--order-colour);
+  color: white;
+  border: none;
+}
+
+/* CARD SECTION */
+.cards {
+  justify-content: center;
+  height: 20vh;
+  padding: 0rem 3rem;
+}
+
+.card {
+  border: 2px solid rgba(228, 197, 164, 0.1);
+  height: 80%;
+  width: 20%;
+  margin: 0rem 3rem;
+}
+
+.card img {
+  padding: 0 1.2rem;
+}
+
+.card h4 {
+  font-size: var(--header4);
+  padding-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: italic;
+}
